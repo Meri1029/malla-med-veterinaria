@@ -333,40 +333,32 @@ let asignaturas = {
          },
 
    // 🔸 Semestre 10
-   '': {
-    nombre: '',
+   'internado medicina indiv.': {
+    nombre: 'internado medicina indiv.',
     descripcion: '',
-    requisito: ''
+    requisito: null
          },
-   '': {
-    nombre: '',
+   'internado prod. animal': {
+    nombre: 'internado prod. animal',
     descripcion: '',
-    requisito: ''
+    requisito: null
          },
-   '': {
-    nombre: '',
+   'internado medicina prev.': {
+    nombre: 'internado medicina prev.',
     descripcion: '',
-    requisito: ''
+    requisito: null
          },
-   '': {
-    nombre: '',
+   'practica profesional': {
+    nombre: 'practica profesional',
     descripcion: '',
-    requisito: ''
+    requisito: null
          },
-   '': {
-    nombre: '',
+   'taller de titulación': {
+    nombre: 'taller de titulación',
     descripcion: '',
-    requisito: ''
+    requisito: null
          },
-   '': {
-    nombre: '',
-    descripcion: '',
-    requisito: ''
-         },
-   
-   
-  
-    
+  };
 
 function completar(id) {
   const elem = document.querySelector(`[onclick="completar('${id}')"]`);

@@ -37,3 +37,10 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+.aprobado {
+  text-decoration: line-through;
+  opacity: 0.6;
+  background: #a5d6a7; /* verde claro */
+}
+

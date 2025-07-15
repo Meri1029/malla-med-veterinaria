@@ -3,22 +3,22 @@ let asignaturas = {
   'Bases moleculares': {
     nombre: 'Bases moleculares',
     descripcion: '',
-    requisito: 'Bases moleculares y celulares', 'Bases celulares'
+    requisito: null
   },
   'IMI': {
     nombre: 'IMI',
     descripcion: '',
-    requisito: 'bioestadistica'
+    requisito: null
   },
   'metodos de cuantificación': {
     nombre: 'Metodos de cuantificación',
     descripcion: '',
-    requisito: 'bioestadistica'
+    requisito: null
   },
   'zoologia': {
     nombre: 'Zoología',
     descripcion: '',
-    requisito: 'ecología'
+    requisito: null
   },
   'OMV': {
     nombre: 'OMV',
@@ -28,29 +28,29 @@ let asignaturas = {
   'ingles beginner': {
     nombre: 'Ingles beginner',
     descripcion: '',
-    requisito: 'ingles preintermedio'
+    requisito: null
       },
 
   // 🔸 Semestre 2
   'bases moleculares y celulares': {
     nombre: 'bases moleculares y celulares',
     descripcion: '',
-    requisito: 'fisiologia I', 'bases inmunologicas', 'agentes biologicos patógenos'
+    requisito: 'bases moleculares'
        },
   'bases celulares': {
     nombre: 'bases celulares',
     descripcion: '',
-    requisito: 'fisiologia I', 'agentes biologicos patógenos'
+    requisito: 'bases moleculares'
        },
   'bioestadistica': {
     nombre: 'bioestadistica',
     descripcion: '',
-    requisito: 'epidemiologica', 'MAIG'
+    requisito: 'IMI', 'metodos de cuantificación'
        },
   'est. macro del organismo animal': {
     nombre: 'est. macro del organismo animal',
     descripcion: '',
-    requisito: 'fisiologia II'
+    requisito: null
        },
   'des. micro del organismo animal': {
     nombre: 'des. micro del organismo animal',
@@ -60,7 +60,7 @@ let asignaturas = {
   'ecologia': {
     nombre: 'ecologia',
     descripcion: '',
-    requisito: 'conducta animal', 'MAEP'
+    requisito: 'diversidad animal'
        },
   'seminario espacio A': {
     nombre: 'seminario espacio A',
@@ -82,22 +82,22 @@ let asignaturas = {
   'est. macro. del organismo animal': {
     nombre: 'est. macro. del organismo animal',
     descripcion: '',
-    requisito: 'fisiologia II'
+    requisito: null
        },
   'fisiologia I': {
     nombre: 'fisiologia I',
     descripcion: '',
-    requisito: 'fisiologia II', 'farmacologia general'
+    requisito: 'bases moleculares y celulares', 'bases celulares'
        },
   'epidemiologia ': {
     nombre: 'epidemiologia',
     descripcion: '',
-    requisito: 'enf. infecciosas y parasitarias'
+    requisito: 'bioestadistica'
        },
   'bases economicas': {
     nombre: 'bases economicas',
     descripcion: '',
-    requisito: 'MAPLAN'
+    requisito: null
        },
   'des. micro del organismo animal': {
     nombre: 'des. micro del organismo animal',
@@ -107,7 +107,7 @@ let asignaturas = {
   'conducta animal': {
     nombre: 'conducta animal',
     descripcion: '',
-    requisito: 'MACA'
+    requisito: 'ecología'
        },
   'practica clinica básica': {
     nombre: 'practica clinica básica',
@@ -124,37 +124,37 @@ let asignaturas = {
   'bases inmunologicas': {
     nombre: 'bases inmunologicas',
     descripcion: '',
-    requisito: 'patologia I', 'bases de tecn. diagnostica'
+    requisito: 'bases moleculares y celulares'
       },
   'fisiologia II': {
     nombre: 'fisiologia II',
     descripcion: '',
-    requisito: 'patologia I', 'nutrición'
+    requisito: 'fisiologia I', 'est. macro del organismo animal'
       },
   'famracologia general': {
     nombre: 'farmacologia general',
     descripcion: '',
-    requisito: null
+    requisito: 'fisiologia I'
       },
   'int. producción animal': {
     nombre: 'int. producción animal',
     descripcion: '',
-    requisito: 'MACA'
+    requisito: null
       },
   'agentes biologicos y patogenos': {
     nombre: 'agentes biologicos y patogenos',
     descripcion: '',
-    requisito: 'enf. infecciosas y parasitarias', 'bases de tecn. diagnosticas'
+    requisito: 'bases moleculares y celulares', 'bases celulares'
       },
   'bases economicas': {
     nombre: 'bases economicas',
     descripcion: '',
-    requisito: 'MAPLAN'
+    requisito: null
       },
   'MAEP': {
     nombre: 'MAEP',
     descripcion: '',
-    requisito: null
+    requisito: 'ecología'
       },
   'modulo int. ciclo basico': {
     nombre: 'modulo int. ciclo basico',
@@ -166,72 +166,173 @@ let asignaturas = {
   'enf. infecciosas y parasitarias': {
     nombre: 'enf. infecciosas y parasitarias',
     descripcion: '',
-    requisito: 'salud pública veterinaria', 'patologia en explotaciones'
+    requisito: 'epidemiologia', 'agentes biologicos patogenos'
          },
   'patologia I': {
     nombre: 'patologia I',
     descripcion: '',
-    requisito: 'patologia II'
+    requisito: 'bases inmunologicas', 'fisiologia II'
          },
   'nutrición': {
     nombre: 'nutrición',
     descripcion: '',
-    requisito: 'alimentación'
+    requisito: 'fisiologia II', 'int. producción animal'
          },
   'bases de tecn. diagnosticas': {
     nombre: 'bases de tecn. diagnosticas',
     descripcion: '',
-    requisito: 'metodos de exploracion clinica'
+    requisito: 'bases inmunologicas', 'agentes biologicos patogenos'
          },
   'MAIG': {
     nombre: 'MAIG',
     descripcion: '',
-    requisito: 'genética básica'
+    requisito: 'bioestadistica'
          },
 
       // 🔸 Semestre 6
   'genética básica': {
     nombre: 'genética básica',
     descripcion: '',
-    requisito: 'reproducción', 'biotecnología reproductiva'
+    requisito: 'MAIG'
          },
     'patologia II': {
     nombre: 'patologia II',
     descripcion: '',
-    requisito: 'patologia III', 'patologia diagnostica'
+    requisito: 'patologia I'
          },
     'alimentación': {
     nombre: 'alimentación',
     descripcion: '',
-    requisito: 'manejos productivos', 'manejos productivos'
+    requisito: 'nutrición'
          },
     'metodos de exploración clinica': {
     nombre: 'metodos de exploración clinica',
     descripcion: '',
-    requisito: 'medicina nivel I'
+    requisito: 'bases de tecn. diagnosticas'
          },
     'MAAT': {
     nombre: 'MAAT',
     descripcion: '',
-    requisito: ''
+    requisito: null
          },
 
-    // 🔸 Semestre 6
-    '': {
-    nombre: '',
+    // 🔸 Semestre 7
+    'patologia III': {
+    nombre: 'patologia III',
     descripcion: '',
-    requisito: ''
+    requisito: 'patologia II'
          },
-    '': {
-    nombre: '',
+    'patologia diagnostica': {
+    nombre: 'patologia diagnostica',
     descripcion: '',
-    requisito: ''
+    requisito: 'patologia II'
          },
-    '': {
-    nombre: '',
+    'reproducción': {
+    nombre: 'reproducción',
     descripcion: '',
-    requisito: ''
+    requisito: 'genetica básica'
          },
+   'biotecnologia reproductiva': {
+    nombre: 'biotecnologia reproductiva',
+    descripcion: '',
+    requisito: 'genetica básica'
+         },
+   'medicina nivel I': {
+    nombre: 'medicina nivel I',
+    descripcion: '',
+    requisito: 'metodos de exploración clinica', 'patologia II'
+         },
+   'salud pública veterinaria': {
+    nombre: 'salud pública veterinaria',
+    descripcion: '',
+    requisito: 'enf. infecciosas y parasitarias'
+         },
+   'MACA': {
+    nombre: 'MACA',
+    descripcion: '',
+    requisito: 'conducta animal', 'inf. producción animal'
+         },
+
+   // 🔸 Semestre 8
+   'gestión ambiental': {
+    nombre: 'gestión ambiental',
+    descripcion: '',
+    requisito: 'salud pública veterinaria'
+         },
+   'inocuidad de los alimentos': {
+    nombre: 'inocuidad de los alimentos',
+    descripcion: '',
+    requisito: 'salud pública veterinaria'
+         },
+   'manejos productivos': {
+    nombre: 'manejos productivos',
+    descripcion: '',
+    requisito: 'reproducción', 'alimentación'
+         },
+   'obstetricia y ginecologia': {
+    nombre: 'obstetricia y ginecologia',
+    descripcion: '',
+    requisito: 'reproducción', 'biotecnologia reproductiva'
+         },
+   'medicina nivel I': {
+    nombre: 'medicina nivel I',
+    descripcion: '',
+    requisito: 'metodos de exploración clinica', 'patologia II'
+         },
+   'practica preprofesional': {
+    nombre: 'practica preprofesional',
+    descripcion: '',
+    requisito: null
+         },
+   'MAPLAN': {
+    nombre: 'MAPLAN',
+    descripcion: '',
+    requisito: 'bases economicas'
+         },
+   'modulo int. ciclo preprof.': {
+    nombre: 'modulo int. ciclo preprof.',
+    descripcion: '',
+    requisito: null
+         },
+
+   // 🔸 Semestre 9
+   'impacto ambiental': {
+    nombre: 'impacto ambiental',
+    descripcion: '',
+    requisito: 'gestión ambiental'
+         },
+   'aseg. y calidad de alimentos': {
+    nombre: 'aseg. y calidad de alimentos',
+    descripcion: '',
+    requisito: 'inocuidad de los alimentos'
+         },
+   'manejos productivos': {
+    nombre: 'manejos productivos',
+    descripcion: '',
+    requisito: 'reproducción', 'alimentación'
+         },
+   'medicina interna nivel II': {
+    nombre: 'medicina interna nivel II',
+    descripcion: '',
+    requisito: 'medicina nivel I'
+         },
+   'anestesiologia y cirugia': {
+    nombre: 'anestesiologia y cirugia',
+    descripcion: '',
+    requisito: 'patologia diagnostica', 'medicina nivel I'
+         },
+   'patologia en explotaciones': {
+    nombre: 'patologia en explotaciones',
+    descripcion: '',
+    requisito: 'enf, infecciosas y parasitarias', 'patologia III'
+         },
+   'MABL': {
+    nombre: 'MABL',
+    descripcion: '',
+    requisito: 'inocuidad de los alimentos'
+         },
+
+   // 🔸 Semestre 10
    '': {
     nombre: '',
     descripcion: '',
@@ -262,6 +363,8 @@ let asignaturas = {
     descripcion: '',
     requisito: ''
          },
+   
+   
   
     
 

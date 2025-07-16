@@ -1,46 +1,57 @@
-
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f0f0;
+  font-family: sans-serif;
   padding: 20px;
+  background: #fff0f5;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 30px;
+  color: #c2185b;
+}
+
+h2 {
+  color: #880e4f;
 }
 
 .malla {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .asignatura {
-  background: #4caf50;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 15px;
+  background: #f8bbd0;
+  border-radius: 10px;
+  margin: 5px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .asignatura:hover {
-  background: #45a049;
-}
-
-#info {
-  background: white;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #f48fb1;
 }
 
 .aprobado {
   text-decoration: line-through;
   opacity: 0.6;
-  background: #a5d6a7; /* verde claro */
 }
 
+.anual {
+  background: #e1bee7;
+}
+
+.practica {
+  background: #fce4ec;
+}
+
+.info {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.progreso {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f3e5f5;
+  border-radius: 8px;
+  font-weight: bold;
+}

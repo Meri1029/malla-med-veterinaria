@@ -73,3 +73,8 @@ h2 {
   font-weight: bold;
 }
 
+.asignatura.desbloqueado {
+  background-color: #ffd6e6 !important;
+  border-color: #ff94b6;
+}
+

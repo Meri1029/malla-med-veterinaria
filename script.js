@@ -3,30 +3,37 @@ let asignaturas = {
   'bases_moleculares': { nombre: 'Bases moleculares', requisito: null },
   'imi': { nombre: 'IMI', requisito: null },
   'cuantificacion': { nombre: 'Métodos de cuantificación', requisito: null },
-  'zoologia': { nombre: 'Zoología', requisito: null },
+  'diversidad_animal': { nombre: 'Zoología', requisito: null },
+  'omv': { nombre: 'OMV', requisito: null },
+   'ingles_beginner': { nombre: 'ingles beginner', requisito: null },
 
   // Semestre 2
   'bases_celulares': { nombre: 'Bases celulares', requisito: ['bases_moleculares'] },
-  'bioestadistica': { nombre: 'Bioestadística', requisito: ['imi', 'cuantificacion'] },
+  'bioestadistica': { nombre: 'Bioestadistica', requisito: ['imi', 'cuantificacion'] },
   'practica_basica': { nombre: 'Práctica General Básica', requisito: null },
+  'bases_moleculares': { nombre: 'Bases moleculares y celulares', requisito: ['bases_moleculares'] },
+  'ecologia': { nombre: 'ecologia', requisito: ['zoologia'] },
+   'seminario_a': { nombre: 'seminario espacio A', requisito: null },
+   'practica_basica': { nombre: 'practica basica', requisito: null },
+   'ingles_preintermedio': { nombre: 'ingles preintermedio', requisito: ['ingles_beginner'] },
 
   // Semestre 3
-  'macro_animal': { nombre: 'Estructura macroscópica del organismo animal', requisito: null },
-  'fisiologia_I': { nombre: 'Fisiología I', requisito: ['bases_celulares'] },
+  'macro_animal_rep': { nombre: 'Estructura macroscópica del organismo animal', requisito: null },
+  'fisiologia_I': { nombre: 'Fisiología I', requisito: ['bases_celulares', 'bases_moelculares] },
   'epidemiologia': { nombre: 'Epidemiología', requisito: ['bioestadistica'] },
   'eco_basicas': { nombre: 'Bases económicas', requisito: null },
-  'micro_animal': { nombre: 'Estructura microscópica del organismo animal', requisito: null },
-  'conducta_animal': { nombre: 'Conducta animal', requisito: ['zoologia'] },
+  'micro_animal_rep': { nombre: 'Estructura microscópica del organismo animal', requisito: null },
+  'conducta_animal': { nombre: 'Conducta animal', requisito: ['ecologia'] },
   'practica_clinica': { nombre: 'Práctica clínica básica', requisito: null },
   'practica_campo': { nombre: 'Práctica de campo básica', requisito: null },
 
   // Semestre 4
-  'inmunologia': { nombre: 'Bases inmunológicas', requisito: ['bases_celulares'] },
+  'inmunologia': { nombre: 'Bases inmunológicas', requisito: ['bases_moleculares'] },
   'fisiologia_II': { nombre: 'Fisiología II', requisito: ['fisiologia_I', 'macro_animal'] },
   'farmacologia': { nombre: 'Farmacología general', requisito: ['fisiologia_I'] },
   'produccion_animal': { nombre: 'Introducción a la producción animal', requisito: null },
-  'agentes_patogenos': { nombre: 'Agentes biológicos y patógenos', requisito: ['bases_celulares'] },
-  'maep': { nombre: 'MAEP', requisito: ['zoologia'] },
+  'agentes_patogenos': { nombre: 'Agentes biológicos y patógenos', requisito: ['bases_celulares', 'bases_moleculares'] },
+  'maep': { nombre: 'MAEP', requisito: ['ecologia'] },
   'modulo_basico': { nombre: 'Módulo integrador ciclo básico', requisito: null },
 
   // Semestre 5

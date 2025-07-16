@@ -11,7 +11,7 @@ let asignaturas = {
   'bases_celulares': { nombre: 'Bases celulares', requisito: ['bases_moleculares'] },
   'bioestadistica': { nombre: 'Bioestadistica', requisito: ['imi', 'cuantificacion'] },
   'practica_basica': { nombre: 'Práctica General Básica', requisito: null },
-  'bases_moleculares': { nombre: 'Bases moleculares y celulares', requisito: ['bases_moleculares'] },
+  'bioquimica': { nombre: 'Bases moleculares y celulares', requisito: ['bases_moleculares'] },
   'ecologia': { nombre: 'ecologia', requisito: ['zoologia'] },
    'seminario_a': { nombre: 'seminario espacio A', requisito: null },
    'practica_basica': { nombre: 'practica basica', requisito: null },
@@ -19,7 +19,7 @@ let asignaturas = {
 
   // Semestre 3
   'macro_animal_rep': { nombre: 'Estructura macroscópica del organismo animal', requisito: null },
-  'fisiologia_I': { nombre: 'Fisiología I', requisito: ['bases_celulares', 'bases_moelculares] },
+  'fisiologia_I': { nombre: 'Fisiología I', requisito: ['bases_celulares', 'bioquimica] },
   'epidemiologia': { nombre: 'Epidemiología', requisito: ['bioestadistica'] },
   'eco_basicas': { nombre: 'Bases económicas', requisito: null },
   'micro_animal_rep': { nombre: 'Estructura microscópica del organismo animal', requisito: null },

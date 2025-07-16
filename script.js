@@ -82,12 +82,18 @@ let asignaturas = {
 function completar(id) {
   const elem = document.querySelector(`[onclick="completar('${id}')"]`);
   const info = asignaturas[id];
-
   if (!elem) return;
 
   if (elem.classList.contains('aprobado')) {
     elem.classList.remove('aprobado');
     document.getElementById('contenido-info').textContent = `${info.nombre} desmarcado.`;
+    // Quitar color de desbloqueo en siguientes
+    Object.entries(asignaturas).forEach(([clave, val]) => {
+      if (val.requisito && val.requisito.includes && val.requisito.includes(id)) {
+        const siguienteElem = document.querySelector(`[onclick="completar('${clave}')"]`);
+        if (siguienteElem) siguienteElem.classList.remove('desbloqueado');
+      }
+    });
   } else {
     elem.classList.add('aprobado');
     document.getElementById('contenido-info').textContent = `${info.nombre} aprobado.`;
@@ -104,9 +110,13 @@ function completar(id) {
     if (siguientes.length > 0) {
       const nombres = siguientes.map(([_, val]) => val.nombre).join(', ');
       document.getElementById('contenido-info').textContent += ` Puedes cursar: ${nombres}.`;
+
+      siguientes.forEach(([clave]) => {
+        const siguienteElem = document.querySelector(`[onclick="completar('${clave}')"]`);
+        if (siguienteElem) siguienteElem.classList.add('desbloqueado');
+      });
     }
   }
-
   actualizarProgreso();
 }
 
